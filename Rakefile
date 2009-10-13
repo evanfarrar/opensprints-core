@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "opensprints-core"
     gem.summary = %Q{A lib for interacting with opensprints race records data}
-    gem.description = %Q{This contains everything common between the stats app and the opensprints shoes app. If you want to write a new application to display opensprints stats or run races, this is your gem. }
+    gem.description = %Q{A lib for interacting with opensprints race records data. If you want to write a new application to display opensprints stats or run races, this is your gem. }
     gem.email = "evanfarrar@gmail.com"
     gem.homepage = "http://github.com/evanfarrar/opensprints-core"
     gem.authors = ["Evan Farrar"]
