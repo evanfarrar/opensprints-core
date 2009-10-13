@@ -2,7 +2,7 @@
 
 This is a library for interacting with the data recorded by opensprints. Racers, Speed, Events, best time, losses, speed, etc. are all encapsulated here. If you'd like to create a ruby application for goldsprints registration, conducting races, or analyzing performances "opensprints-core" is your gem.
 
-This library was extracted from opensprints[http://github.com/evanfarrar/opensprints]. This is the "model" for opensprints's view. This portion of the application had good test coverage (the view portion has none). This portion of the app has kept a similar structure since the beginning of the project (opensprints' view has been completely rewritten with at least 4 different architectures and libraries).
+This library was extracted from opensprints[http://github.com/evanfarrar/opensprints]. This is the "model" for opensprints's view. This portion of the application had good test coverage (the view portion has none). This portion of the app has kept a similar structure since the beginning of the project (opensprints' view has been completely rewritten with at least 4 different architectures and libraries). This gem is currently only used in the stats[http://github.com/evanfarrar/opensprints.org] application and the opensprints shoes[http://github.com/evanfarrar/opensprints] application. If you're using it in your project, let me know (evan (at) opensprints (period) org).
 
 == Note on Patches/Pull Requests
  
