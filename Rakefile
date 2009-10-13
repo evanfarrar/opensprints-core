@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "opensprints-core"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A lib for interacting with opensprints race records data}
+    gem.description = %Q{This contains everything common between the stats app and the opensprints shoes app. If you want to write a new application to display opensprints stats or run races, this is your gem. }
     gem.email = "evanfarrar@gmail.com"
     gem.homepage = "http://github.com/evanfarrar/opensprints-core"
     gem.authors = ["Evan Farrar"]
     gem.add_development_dependency "bacon"
+    gem.add_dependency "sequel"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
@@ -21,7 +22,7 @@ end
 require 'rake/testtask'
 Rake::TestTask.new(:spec) do |spec|
   spec.libs << 'lib' << 'spec'
-  spec.pattern = 'spec/**/*_spec.rb'
+  spec.pattern = 'test/test_*.rb'
   spec.verbose = true
 end
 
