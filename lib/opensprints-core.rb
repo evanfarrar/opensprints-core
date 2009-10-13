@@ -10,7 +10,7 @@ if(defined? Shoes) #Real environment
 else               #Test environment
   DB = Sequel.connect("sqlite::memory:")
 end
-Sequel::Migrator.apply(DB, 'migrations/')
+Sequel::Migrator.apply(DB, 'lib/migrations/')
 Infinity = 1/0.0
 require 'opensprints-core/tournament'
 require 'opensprints-core/tournament_participation'
