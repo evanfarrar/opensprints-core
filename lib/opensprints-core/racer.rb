@@ -6,7 +6,7 @@ class Racer < Sequel::Model
   end
 
   def best_time
-    best = DB[:race_participations].filter(:racer_id => self.pk).order(:finish_time).select(:finish_time).first
+    best = self.db[:race_participations].filter(:racer_id => self.pk).order(:finish_time).select(:finish_time).first
     best[:finish_time] if best
   end
 end
