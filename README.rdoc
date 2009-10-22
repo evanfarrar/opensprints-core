@@ -8,6 +8,10 @@ This library was extracted from opensprints[http://github.com/evanfarrar/openspr
  
 OpenSprints has an aggressively liberal commit policy. If you follow or fork the project on github, we'll add you the project's collaborators list.
 
+If you're intereseted in learning more about the structure of this application to modify, extend or fork it, read our API docs:
+http://rdoc.info/projects/evanfarrar/opensprints
+http://rdoc.info/projects/evanfarrar/opensprints-core
+
 == Copyright
 
 Copyright (c) 2009 Evan Farrar. See LICENSE for details.
