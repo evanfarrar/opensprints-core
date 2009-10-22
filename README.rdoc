@@ -2,15 +2,15 @@
 
 This is a library for interacting with the data recorded by opensprints. Racers, Speed, Events, best time, losses, speed, etc. are all encapsulated here. If you'd like to create a ruby application for goldsprints registration, conducting races, or analyzing performances "opensprints-core" is your gem.
 
-This library was extracted from opensprints[http://github.com/evanfarrar/opensprints]. This is the "model" for opensprints's view. This portion of the application had good test coverage (the view portion has none). This portion of the app has kept a similar structure since the beginning of the project (opensprints' view has been completely rewritten with at least 4 different architectures and libraries). This gem is currently only used in the stats[http://github.com/evanfarrar/opensprints.org] application and the opensprints shoes[http://github.com/evanfarrar/opensprints] application. If you're using it in your project, let me know (evan (at) opensprints (period) org).
+This library was extracted from {http://github.com/evanfarrar/opensprints opensprints}. This is the "model" for opensprints's view. This portion of the application had good test coverage (the view portion has none). This portion of the app has kept a similar structure since the beginning of the project (opensprints' view has been completely rewritten with at least 4 different architectures and libraries). This gem is currently only used in the {http://github.com/evanfarrar/opensprints.org opensprints.org application} and the {http://github.com/evanfarrar/opensprints opensprints shoes application}. If you're using it in your project, let me know (evan (at) opensprints (period) org).
 
 == Note on Patches/Pull Requests
  
 OpenSprints has an aggressively liberal commit policy. If you follow or fork the project on github, we'll add you the project's collaborators list.
 
 If you're intereseted in learning more about the structure of this application to modify, extend or fork it, read our API docs:
-http://rdoc.info/projects/evanfarrar/opensprints
-http://rdoc.info/projects/evanfarrar/opensprints-core
+* {http://rdoc.info/projects/evanfarrar/opensprints}
+* {http://rdoc.info/projects/evanfarrar/opensprints-core}
 
 == Copyright
 
