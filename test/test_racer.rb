@@ -42,4 +42,18 @@ describe 'A racer' do
     end
     racer.best_time.should==(2.7)
   end
+
+  it "should ignore best times from fun races" do
+    racer = Racer.create
+    [7.0, 12.0, 2.7, 10.0].each do |time|
+      race = Race.create(:for_fun => true)
+      RaceParticipation.create(:finish_time => time, :race => race, :racer => racer)
+    end
+    racer.best_time.should==nil
+    [7.0, 12.0, 10.0].each do |time|
+      race = Race.create
+      RaceParticipation.create(:finish_time => time, :race => race, :racer => racer)
+    end
+    racer.best_time.should==7.0
+  end
 end
