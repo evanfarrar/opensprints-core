@@ -8,6 +8,10 @@ class RaceParticipation < Sequel::Model
 
   attr_accessor :ticks
 
+  def finished?
+    !!finish_time
+  end
+
   def percent_complete
     [1.0, self.distance / $RACE_DISTANCE].min
   end

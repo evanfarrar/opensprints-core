@@ -18,6 +18,12 @@ describe 'A race participation' do
     @r.distance.should==(21.0)
   end
 
+  it "is finished if it has a finish_time" do
+    @r.finished?.should==false
+    @r.finish_time = 1
+    @r.finished?.should==true
+  end
+
   describe 'percent complete' do
     it 'should be the ratio of race distance to distance' do
       $RACE_DISTANCE = 84.0
